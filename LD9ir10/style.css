@@ -1,0 +1,141 @@
+body {background-color: rgb(88, 88, 88);}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-right: 20%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.85);
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Tahoma, sans-serif;
+  font-size: 18px;
+}
+
+
+li a:hover {
+  background-color: #111;
+}
+
+/*home*/
+.home {
+  background-image: url(background.jpg);
+  width: 100%;
+  height: 500px;
+  text-align: center;
+  padding-top: 250px;  
+  padding-bottom: 50px;
+  font-family: Tahoma, sans-serif;
+  font-size: 40px;
+}
+
+/*apie*/
+.about {
+  background-color: rgb(31, 31, 31);
+  padding: 70px;
+  margin: 75px 200px 75px 200px;
+  font-family: Tahoma, sans-serif;
+  display: grid; 
+  grid-template-columns: 0.5fr 0.6fr 1.9fr; 
+  grid-template-rows: 0.6fr 0.4fr 2fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "item1 item2 item3"
+    ". . item3"
+    ". . .";
+}
+
+.item1 { grid-area: item1; }
+.item2 { grid-area: item2; }
+.item3 { grid-area: item3; }
+
+.info {
+color: white;
+text-align-last: left
+}
+.photo {
+  margin-bottom: 2rem;
+  margin-left: 10px;
+}
+.desc_title{
+  color: white;
+}
+.desc{
+  color: white;
+}
+
+/*įgudžiai*/
+.skills {
+  background-color: rgb(31, 31, 31);
+  padding: 70px;
+  margin: 75px 200px 75px 200px;
+  font-family: Tahoma, sans-serif;
+}
+.skill-mf .title-s {
+  color: white;
+}
+.skill-mf span {
+  color: #ffffff;
+}
+
+.skill-mf .progress {
+  background-color: #505050;
+  margin: 0.5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: 0.7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: 0.7rem;
+  background-color: #0078ff;
+}
+
+/*kontaktai*/
+
+.contacts {
+  background-color: rgb(31, 31, 31);
+  padding: 70px;
+  margin: 75px 200px 75px 200px;
+  font-family: Tahoma, sans-serif;
+}
+
+.contacts .contacts_name {
+  color: #ffffff;
+  font-size: 26px;
+}
+
+.contacts .contacts_input {
+  background-color: rgb(31, 31, 31);
+  border-radius: 1px;
+  border: 1px solid #5a5a5a;
+  width: 15%;
+}
+::placeholder {
+  color: #5a5a5a;
+}
+
+button {
+  width: 15%;
+  background-color: #0078ff;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  font-size: 16px;
+}

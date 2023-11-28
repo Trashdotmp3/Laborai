@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LD9/10</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+  <header>
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li class="navbarlist"><a href="#contacts" class="navbarlist">Contacts</a></li>
+        <li class="navbarlist"><a href="#skills" class="navbarlist">Skills</a></li>
+        <li class="navbarlist"><a href="#about" class="navbarlist">About</a></li>
+        <li class="navbarlist"><a href="#home" class="navbarlist">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="home">
+    <p><span class="hometext">Kristupas Želnia</span></p>
+    <p><span class="hometext">Vilnius Tech Student</span></p>
+  </section>
+  
+  <section id="about" class="about">
+    <section class="item1">
+      <div>
+        <img src="kristukas.jpg" class="photo" alt="" width="150" height="150">
+      </div>
+    </section>
+      <section class="item2">
+        <p><span class="info">Name: </span> <span class="info">Kristupas Želnia</span></p>
+        <p><span class="info">Profile: </span> <span class="info">Vilnius Tech Student</span></p>
+        <p><span class="info">Email: </span> <span class="info">vardenis.pavardenis@example.com</span></p>
+        <p><span class="info">Phone: </span> <span class="info">+865555555</span></p>
+      </section>
+      <section class="item3">
+        <p><span class="desc_title">About me</span></p>
+        <p><span class="desc">I study at VGTU.</span></p>
+      </section>
+  </section>
+
+  <section id="skills" class="skills">
+    <div class="skill-mf">
+      <p class="title-s">Skills</p>
+      <span>HTML</span> <span class="pull-right">50%</span>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <span>Matlab</span> <span class="pull-right">50%</span>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <span>C++</span> <span class="pull-right">15%</span>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <span>C</span> <span class="pull-right">5%</span>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacts" class="contacts">
+    <section class="itemc1">
+      <p><span class="contacts_name">Send a message!</span></p>
+      <p>
+        <br><input type="text" class="contacts_input" id="name" placeholder="Your name">
+      </p>
+      <p>
+        <br><input type="email" class="contacts_input" id="email" placeholder="Your email">
+      </p>
+      <p>
+        <br><input type="text" class="contacts_input" id="subject" placeholder="Subject">
+      </p>
+      <p>
+        <br><textarea name="address" id="address" cols="40" rows="3" class="contacts_input" placeholder="Message"></textarea>
+    </p>
+    <p>
+      <button id="submit" type="submit" class="message">Send message</button>
+    </p>
+    </section>
+    <section id="Contactus" class="contactus">
+      <p><span class="contactus_pav">Contact us</span></p>
+      <p><span class="sinfo">Kalvariju turgus</span></p>
+      <p><span class="sinfo">+86555555</span></p>
+      <p><span class="sinfo">vardenis.pavardenis@example.com</span></p>
+      <button type="button" class="buttons">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/600px-Facebook_Logo_%282019%29.png" alt="buttonpng"  height="25px" width="25px" />
+      </button>
+      <button type="button" class="buttons">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1024px-Instagram_logo_2022.svg.png" alt="buttonpng"  height="25px" width="25px" />
+      </button>  
+      <button type="button" class="buttons" onclick="print()">
+        <span class="material-symbols-outlined">
+          print
+          </span>
+      </button> 
+    </section>
+  </section>
+</body>
+</html>
