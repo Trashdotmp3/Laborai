@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diametro Patikra</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="form-container">
+  <label for="diameter">Diametras:</label>
+  <input type="text" id="diameter" name="diameter" oninput="checkDiameter()">
+  <button onclick="calculateColor()">Pritaikyti spalvą</button>
+  <div id="errorMessage" class="error-message"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vartotojo Duomenų Forma</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="form-container">
+  <form id="userForm">
+    <label for="firstName">Vardas:</label>
+    <input type="text" id="firstName" name="firstName" required>
+
+    <label for="lastName">Pavardė:</label>
+    <input type="text" id="lastName" name="lastName" required>
+
+    <label for="number1">Skaičius 1 (I-X):</label>
+    <input type="text" id="number1" name="number1" pattern="[IVXLCDM]+"
+           title="Įveskite skaičių nuo I iki X romėnišku formatu" required>
+
+    <label for="number2">Skaičius 2 (I-X):</label>
+    <input type="text" id="number2" name="number2" pattern="[IVXLCDM]+"
+           title="Įveskite skaičių nuo I iki X romėnišku formatu" required>
+
+    <button type="button" onclick="submitForm()">Išsaugoti duomenis</button>
+  </form>
+
+  <div id="resultContainer">
+    <h2>Rezultatas:</h2>
+    <pre id="resultContent"></pre>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
